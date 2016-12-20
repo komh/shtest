@@ -1,0 +1,4 @@
+1022_length-1.t.sub eol=crlf
+*.cmd               eol=crlf
+*.in                binary
+*.wanted            binary
