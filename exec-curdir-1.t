@@ -1,4 +1,6 @@
 # Test if a command in a current directory is executed without $PATH
+
+me="$0"
 PATH=/usr/bin
-exec-curdir-1.t.sub
+"$me.sub"
 test "$?" = "127"

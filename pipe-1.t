@@ -17,6 +17,6 @@ transform_todo_ids () {
     done <"$me.in" >"$me.got"
 }
 
-me="pipe-1.t"
+me="$0"
 transform_todo_ids
 diff "$me.wanted" "$me.got"

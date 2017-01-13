@@ -1,6 +1,8 @@
 # Test if some bytes at the beginning of a line are eaten when EOL mark is
 # CR+LF
 
+me="$0"
+
 func_lalib_unsafe_p ()
 {
     lalib_p=no
@@ -18,4 +20,4 @@ func_lalib_unsafe_p ()
     test yes = "$lalib_p"
 }
 
-func_lalib_unsafe_p "./crlf-1.t.in"
+func_lalib_unsafe_p "./$me.in"

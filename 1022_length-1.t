@@ -1,10 +1,12 @@
 # Test if last CR is trimmed if a line length is 1022 excluding CR+LF
 
+me="$0"
+
 env_test_1021=
 env_test_1022=
 env_test_1023=
 
-. ./1022_length-1.t.sub
+. ./"$me.sub"
 
 echo "env_test_1021 = '$env_test_1021'"
 echo "env_test_1022 = '$env_test_1022'"
