@@ -19,4 +19,4 @@ transform_todo_ids () {
 
 me="pipe-1.t"
 transform_todo_ids
-cmp "$me.wanted" "$me.got"
+diff "$me.wanted" "$me.got"
