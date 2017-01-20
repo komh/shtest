@@ -1,5 +1,5 @@
 # Test if returning a correct error code when a child was siangled
-sleep.exe 10 &
+sleep.exe 3 &
 echo "PID1 = $!, PID2 = $(($! + 1))"
 # On OS/2, exec() is implmeneted spawn(P_WAIT)
 # $! is PID of a forked process. $! + 1 is a real child
