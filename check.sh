@@ -1,4 +1,4 @@
-test_programs=`ls *.t`
+test_programs=$(ls *.t)
 
 for t in $test_programs; do
   "$SH" "$t" > "$t.out" 2> "$t.err" &&

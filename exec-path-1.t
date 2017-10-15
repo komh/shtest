@@ -1,7 +1,7 @@
 # Test if a .cmd file in a directory ending with /, such as X:/ in $PATH is
 # executed
 me="$0"
-root="`pwd | cut -b -3`"
+root="$(pwd | cut -b -3)"
 cmd="$me.sub.cmd"
 cp "$cmd" "$root"
 mv "$cmd" "$cmd.sav"

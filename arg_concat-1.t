@@ -2,4 +2,4 @@
 # in a response file
 
 me="$0"
-test "x`$SH -c @$me.rsp`" = 'x12\3\\\\\4'
+test "x$($SH -c @$me.rsp)" = 'x12\3\\\\\4'
