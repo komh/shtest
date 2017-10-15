@@ -2,5 +2,5 @@
 
 me="$0"
 PATH=/usr/bin
-"$me.sub"
+"$me.sub" 2> /dev/nul
 test "$?" = "127"
