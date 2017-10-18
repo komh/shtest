@@ -1,6 +1,8 @@
 # Test if returning a correct error code when a child was siangled
 sleep.exe 3 &
 echo "PID1 = $!, PID2 = $(($! + 1))"
+# Wait until a real child is executed
+sleep 0.2
 # On OS/2, exec() is implmeneted with spawn(P_WAIT)
 # $! is PID of a forked process. $! + 1 is a real child
 kill -9 $(($! + 1))
