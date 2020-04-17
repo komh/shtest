@@ -2,5 +2,6 @@
 *.out
 *.err
 *.got
+*.exe
 cd-1.t.wanted
 realpath-1.t.wanted
