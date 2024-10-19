@@ -5,7 +5,7 @@ echo "PID1 = $!, PID2 = $(($! + 1))"
 sleep 0.2
 # On OS/2, exec() is implmeneted with spawn(P_WAIT)
 # $! is PID of a forked process. $! + 1 is a real child
-kill -9 $(($! + 1))
+kill -9 $!
 wait $!
 rc=$?
 echo "rc = $rc"
